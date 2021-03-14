@@ -19,7 +19,7 @@ w związku z rozwojem bilbioteki i modularyzacją samej biblioteki potrzebny by�
 ![jBodys](https://logo.jBodys.com/3/cover.png)
 
 ### jLoads
-![jLoads](https://logo.jLoads.com/1/cover.png)
+![jLoads](https://logo.jLoads.com/4/cover.png)
 
 ### jRoutes
 ![jRoutes](https://logo.jRoutes.com/3/cover.png)

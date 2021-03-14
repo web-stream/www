@@ -13,13 +13,13 @@ w związku z rozwojem bilbioteki i modularyzacją samej biblioteki potrzebny by�
 ![let json](https://logo.letjson.com/2/cover.png)
 
 ### json def
-![json def](https://logo.jsondef.com/1/cover.png)
+![json def](https://logo.jsondef.com/3/cover.png)
 
 ### jBodys
-![jBodys](https://logo.jBodys.com/1/cover.png)
+![jBodys](https://logo.jBodys.com/3/cover.png)
 
 ### jLoads
 ![jLoads](https://logo.jLoads.com/1/cover.png)
 
 ### jRoutes
-![jRoutes](https://logo.jRoutes.com/2/cover.png)
+![jRoutes](https://logo.jRoutes.com/3/cover.png)

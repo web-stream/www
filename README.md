@@ -1,5 +1,11 @@
 # [WebStream](https://www.webstream.dev/)
-Streaming application/interface ecosystem for web-development
+Streaming application/interface
+
+Webstream is an ecosystem for web-development.
+
+It works online but You can create it offline, by NFC cards with your handy, without any application.
+
+
 
 ![logo webstream](https://logo.webstream.dev/3/cover.png)
 

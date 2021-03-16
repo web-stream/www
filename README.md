@@ -86,6 +86,8 @@ Poniższe funkcje pozwalają na implementację tych rozwiazań w kilku językach
 + html
 + txt
 + markdown
++ mp3
++ wav
 + js
 + php
 + python

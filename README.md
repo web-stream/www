@@ -91,3 +91,8 @@ Poniższe funkcje pozwalają na implementację tych rozwiazań w kilku językach
 + js
 + php
 + python
+
+
+# Examples
+![hypermodularity](hypermodularity.png)
+![kids_cards](kids_cards.png)

@@ -73,7 +73,7 @@ git.[język].[funkcja].com
 ![jBodys](https://logo.jBodys.com/3/cover.png)
 
 ### jLoads
-![jLoads](https://logo.jLoads.com/4/cover.png)
+![jLoads](https://logo.jLoads.com/3/cover.png)
 
 ### jRoutes
 ![jRoutes](https://logo.jRoutes.com/3/cover.png)

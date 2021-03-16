@@ -77,3 +77,15 @@ Poniższe funkcje pozwalają na implementację tych rozwiazań w kilku językach
 
 ### jRoutes
 ![jRoutes](https://logo.jRoutes.com/3/cover.png)
+
+
+# Media
+
+Ładowanie mediów tekstowych, kodu aplikacji, filmów, głosu, itp.
+
++ html
++ txt
++ markdown
++ js
++ php
++ python

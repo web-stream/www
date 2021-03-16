@@ -15,8 +15,49 @@ w związku z rozwojem bilbioteki i modularyzacją samej biblioteki potrzebny by�
 
 ## Ekosysstem do streamowania
 
+Poniższe funkcje pozwalają na implementację tych rozwiazań w kilku językach programowania
+
+## Funkcja
+
++ letJson
++ jsondef
++ jBodys
++ jLoads
++ jRoutes
+
+## język programowania:
+
++ JavaScript
+  + domena: js.*.com
+
++ PHP
+  + domena: php.*.com
+
++ Python
+  + domena: py.*.com
+
+
+
+# Modularyzacja
+
+### Logo
+logo.[funkcja].com
+
+### Pobranie
+get.[język].[funkcja].com
+
+### Edycja
+git.[język].[funkcja].com
+
+### Dokumentacja
+docs.[język].[funkcja].com
+
+
 ### let json
 ![let json](https://logo.letjson.com/2/cover.png)
+
+ładowanie JSON 
+
 
 ### json def
 ![json def](https://logo.jsondef.com/3/cover.png)

@@ -27,14 +27,14 @@ Poniższe funkcje pozwalają na implementację tych rozwiazań w kilku językach
 
 ## język programowania:
 
-+ JavaScript
-  + domena: js.[funkcja].com
+#### JavaScript
++ domena: js.[funkcja].com
 
-+ PHP
-  + domena: php.[funkcja].com
+#### PHP
++ domena: php.[funkcja].com
 
-+ Python
-  + domena: py.[funkcja].com
+#### Python
++ domena: py.[funkcja].com
 
 
 
@@ -43,19 +43,19 @@ Poniższe funkcje pozwalają na implementację tych rozwiazań w kilku językach
 ## Ogólne Dane
 
 ### Logo
-logo.[funkcja].com
++ logo.[funkcja].com
 
 ### Dokumentacja
-docs.[funkcja].com
++ docs.[funkcja].com
 
 
 ## per Moduł
 
 ### Pobranie, paczka
-get.[język].[funkcja].com
++ get.[język].[funkcja].com
 
 ### Edycja, repozytorium git
-git.[język].[funkcja].com
++ git.[język].[funkcja].com
 
 
 # Moduły

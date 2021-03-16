@@ -28,30 +28,37 @@ Poniższe funkcje pozwalają na implementację tych rozwiazań w kilku językach
 ## język programowania:
 
 + JavaScript
-  + domena: js.*.com
+  + domena: js.[funkcja].com
 
 + PHP
-  + domena: php.*.com
+  + domena: php.[funkcja].com
 
 + Python
-  + domena: py.*.com
+  + domena: py.[funkcja].com
 
 
 
 # Modularyzacja
 
+## Ogólne Dane
+
 ### Logo
 logo.[funkcja].com
 
-### Pobranie
+### Dokumentacja
+docs.[funkcja].com
+
+
+## per Moduł
+
+### Pobranie, paczka
 get.[język].[funkcja].com
 
-### Edycja
+### Edycja, repozytorium git
 git.[język].[funkcja].com
 
-### Dokumentacja
-docs.[język].[funkcja].com
 
+# Moduły
 
 ### let json
 ![let json](https://logo.letjson.com/2/cover.png)

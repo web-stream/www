@@ -94,6 +94,13 @@ Poniższe funkcje pozwalają na implementację tych rozwiazań w kilku językach
 
 
 # Examples
+
 ![hypermodularity](hypermodularity.png)
+
+## Tworzenie aplikacji offline poprzez karty (NFC)
 ![kids_cards](kids_cards.png)
+
+## Przykładowa aplikacja
+sczytujemy kolejno karty od góry do dołu poprzez czytnik NFC (poprzez smartfon'a) i kolejno są otwierane adresy, które są identyfikowane jako kolejne elementy (identyfikacja adresu IP), równocześnie powstaje strona www oparta o te moduły. Lista modułów jest zapisana w JSON, ładowane są za pomocą rozwiązania WebStream .dev , wcześniej biblioteka jLoads, teraz kilka modularnych funkcji docelowo na kilka jezyków, dzięki czemu nie będzie problemu z implementacją w python, php, itd
+
 ![modules](modules.png)

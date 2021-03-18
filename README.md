@@ -5,7 +5,16 @@ Webstream is an ecosystem for web-development.
 
 It works online but You can create it offline, by NFC cards with your handy, without any application.
 
+## How WebStream work's?
+Load any media on website without reload page, now stream each website without reload.
+Over modularity each website can talk to another without barrier...
 
+    html
+    txt
+    markdown
+    mp3
+    wav
+    js
 
 ![logo webstream](https://logo.webstream.dev/3/cover.png)
 

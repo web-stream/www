@@ -1,13 +1,25 @@
 # [WebStream](https://www.webstream.dev/)
-Streaming application/interface
+Streaming application/interface directly on frontend, withoud building backend side
 
-Webstream is an ecosystem for web-development.
+## Current Technologies at 2021
++ Single Page Application (SPA)
++ Progressive Web App (PWA)
++ Application as a Stream (AaaS)
+    + javascript    
+    + native
+    + json based communication
+    
+## AaaS - Application as a Stream
 
-It works online but You can create it offline, by NFC cards with your handy, without any application.
+Supported by WebStream.
+WebStream is an ecosystem for web-development
 
 ## How WebStream work's?
+
 Load any media on website without reload page, now stream each website without reload.
 Over modularity each website can talk to another without barrier...
+
+### Supported media
 
     html
     txt
@@ -108,8 +120,10 @@ Poniższe funkcje pozwalają na implementację tych rozwiazań w kilku językach
 
 ## Tworzenie aplikacji offline poprzez karty (NFC)
 ![kids_cards](kids_cards.png)
+It works online but You can create it offline, by NFC cards with your handy, without any application.
 
 ## Przykładowa aplikacja
+
 sczytujemy kolejno karty od góry do dołu poprzez czytnik NFC (poprzez smartfon'a) i kolejno są otwierane adresy, które są identyfikowane jako kolejne elementy (identyfikacja adresu IP), równocześnie powstaje strona www oparta o te moduły. Lista modułów jest zapisana w JSON, ładowane są za pomocą rozwiązania WebStream .dev , wcześniej biblioteka jLoads, teraz kilka modularnych funkcji docelowo na kilka jezyków, dzięki czemu nie będzie problemu z implementacją w python, php, itd
 
 ![modules](modules.png)

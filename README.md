@@ -36,7 +36,7 @@ Over modularity each website can talk to another without barrier...
 ## Powstanie
 w związku z rozwojem bilbioteki i modularyzacją samej biblioteki potrzebny był wspólny mianownik do połączenia narzędzi tworzących ekosystem do streamowania interface-ów aplikacji webowej.
 
-## Ekosysstem do streamowania
+## Ekosystem do streamowania
 
 Poniższe funkcje pozwalają na implementację tych rozwiazań w kilku językach programowania
 
@@ -62,6 +62,7 @@ Poniższe funkcje pozwalają na implementację tych rozwiazań w kilku językach
 
 
 # Modularyzacja
+[Modularyzacja przy wytwarzaniu oprogramowania.](https://www.hipermodularyzacja.pl/)
 
 ## Ogólne Dane
 

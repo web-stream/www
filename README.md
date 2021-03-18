@@ -1,3 +1,5 @@
+![logo webstream](https://logo.webstream.dev/3/cover.png)
+
 # [WebStream](https://www.webstream.dev/)
 Streaming application/interface directly on frontend, withoud building backend side
 
@@ -28,7 +30,7 @@ Over modularity each website can talk to another without barrier...
     wav
     js
 
-![logo webstream](https://logo.webstream.dev/3/cover.png)
+
 
 
 ## Powstanie

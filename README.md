@@ -85,7 +85,7 @@ Wydzieliłem nawet biblioteki do ładowania, definicji JSON oraz do Ładowania i
 
 
 ### let json
-![let json](https://logo.letjson.com/3/cover.png)
+![let json](https://logo.letjson.com/1/cover.png)
 
 + letJson()
 pobieranie samego jsona
@@ -125,7 +125,7 @@ W anstaepnej wersji również określanie wersji
 
 
 ### jLoads
-![jLoads](https://logo.jloads.com/3/cover.png)
+![jLoads](https://logo.jloads.com/2/cover.png)
 
 + jLoads()
 

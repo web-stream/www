@@ -33,8 +33,57 @@ Over modularity each website can talk to another without barrier...
 
 
 
-## Powstanie
+# Powstanie
 w związku z rozwojem bilbioteki i modularyzacją samej biblioteki potrzebny był wspólny mianownik do połączenia narzędzi tworzących ekosystem do streamowania interface-ów aplikacji webowej.
+
+## Moduły WebStream
+
+[Strona projektu WebStream](https://www.webstream.dev/)
+
+### letJson()
+pobieranie samego jsona
+
+
+### jsonDef()
+okreslanie oczekiwanej struktury oraz podłączenie każdego elementu JSON pod konrketną funkcję
+
+### jBodys()
+
+
+### jLoads()
+
+ładowanie konkretnych url do formatu wyświetlanego w HTML bez okreslenia miejsca gdzie ma być załadowane,
+pliki będą tylko definiowały same zależnosci:
+
+
+      {
+        "/form/field/text.css",
+        "/form/field/email.css",
+        "/form/field/submit.css",
+        "newsletter.html": [
+            "submit.js"
+        ]
+      }
+
+### jRoutes()
+pipelines (event, from, to) definicja miejsc, gdzie i co ma być z czym połączone z jLoads na HTML
+
+
+### jPaths()
+
+routing dla url
++ praca z adresami url
++ event listener
+
+
+
+### jRuns()
+
+devops part
++ deployment
++ monitoring
+
+
 
 ## Ekosystem do streamowania
 

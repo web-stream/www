@@ -25,14 +25,27 @@ Over modularity each website can talk to another without barrier...
 
 ### Supported media
 
-    html
-    txt
-    markdown
-    mp3
-    wav
-    js
++ html
++ txt
++ markdown
++ mp3
++ wav
++ js
 
 
+
+### Media
+
+Ładowanie mediów tekstowych, kodu aplikacji, filmów, głosu, itp.
+
++ html
++ txt
++ markdown
++ mp3
++ wav
++ js
++ php
++ python
 
 
 # Powstanie
@@ -41,6 +54,12 @@ pierwsze kroki:
 + jLoads
 + WebStream
 
+
+Projekt obecnie nazywa się WebStream, jest zbiorem kilku modularnych funkcji, pozwalających na wykorzystanie potencjału jaki leży w protokole http
+i naturalnej predyspozycji jezyka JavaScript do prototypowania.
+
+
+[Strona projektu WebStream](https://www.webstream.dev/)
 ## jLoads
 
 Biblioteka jLoads była jednym z pierwszym implementacji podejścia modułowego w sofwtare developmencie, miała za zadanie załadowanie wszystkich potrzebnych mediów na stronę www.
@@ -57,20 +76,36 @@ Wydzieliłem nawet biblioteki do ładowania, definicji JSON oraz do Ładowania i
 ## Moduły WebStream
 
 
-Projekt obecnie nazywa się WebStream, jest zbiorem kilku modularnych funkcji, pozwalających na wykorzystanie potencjału jaki leży w protokole http
-i naturalnej predyspozycji jezyka JavaScript do prototypowania.
++ letJson
++ jsondef
++ jBodys
++ jLoads
++ jRoutes
 
 
-[Strona projektu WebStream](https://www.webstream.dev/)
 
-### letJson()
+### let json
+![let json](https://logo.letjson.com/2/cover.png)
+
++ letJson()
 pobieranie samego jsona
 
+ładowanie JSON 
 
-### jsonDef()
+
+### json def
+![json def](https://logo.jsondef.com/3/cover.png)
+
+
++ jsonDef()
 okreslanie oczekiwanej struktury oraz podłączenie każdego elementu JSON pod konrketną funkcję
 
-### jBodys()
+
+### jBodys
+![jBodys](https://logo.jBodys.com/3/cover.png)
+
+
++ jBodys()
 
 Definicja moułu, poprzez określenie zalezności ładowania 
 W anstaepnej wersji również określanie wersji
@@ -87,26 +122,36 @@ W anstaepnej wersji również określanie wersji
       
 
 
-### jLoads()
+### jLoads
+![jLoads](https://logo.jLoads.com/3/cover.png)
+
++ jLoads()
 
 Działanie na drzewie DOM, ładowanie stron do konrketnych tagów przy ładowaniu strony
 Ładowanie konkretnych zasobów/mediów poprz ich adres url do formatu wyświetlanego w HTML bez okreslenia miejsca gdzie ma być załadowane,
 pliki będą tylko definiowały same zależnosci:
 
 
-### jRoutes()
+### jRoutes
+![jRoutes](https://logo.jRoutes.com/3/cover.png)
+
+
++ jRoutes()
 pipelines (event, from, to) definicja miejsc, gdzie i co ma być z czym połączone z jLoads na HTML
 
 
-### jPaths()
+## jPaths
+
++ jPaths()
 
 routing dla url
 + praca z adresami url
 + event listener
 
 
+### jRuns
 
-### jRuns()
++ jRuns()
 
 devops part
 + deployment
@@ -159,40 +204,6 @@ Poniższe funkcje pozwalają na implementację tych rozwiazań w kilku językach
 ### Edycja, repozytorium git
 + git.[język].[funkcja].com
 
-
-# Moduły
-
-### let json
-![let json](https://logo.letjson.com/2/cover.png)
-
-ładowanie JSON 
-
-
-### json def
-![json def](https://logo.jsondef.com/3/cover.png)
-
-### jBodys
-![jBodys](https://logo.jBodys.com/3/cover.png)
-
-### jLoads
-![jLoads](https://logo.jLoads.com/3/cover.png)
-
-### jRoutes
-![jRoutes](https://logo.jRoutes.com/3/cover.png)
-
-
-# Media
-
-Ładowanie mediów tekstowych, kodu aplikacji, filmów, głosu, itp.
-
-+ html
-+ txt
-+ markdown
-+ mp3
-+ wav
-+ js
-+ php
-+ python
 
 
 # Examples

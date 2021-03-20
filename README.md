@@ -104,7 +104,7 @@ okreslanie oczekiwanej struktury oraz podłączenie każdego elementu JSON pod k
 
 
 ### jBodys
-![jBodys](https://logo.jBodys.com/2/cover.png)
+![jBodys](https://logo.jbodys.com/2/cover.png)
 
 
 + jBodys()
@@ -125,7 +125,7 @@ W anstaepnej wersji również określanie wersji
 
 
 ### jLoads
-![jLoads](https://logo.jLoads.com/3/cover.png)
+![jLoads](https://logo.jloads.com/3/cover.png)
 
 + jLoads()
 
@@ -135,7 +135,7 @@ pliki będą tylko definiowały same zależnosci:
 
 
 ### jRoutes
-![jRoutes](https://logo.jRoutes.com/3/cover.png)
+![jRoutes](https://logo.jroutes.com/3/cover.png)
 
 
 + jRoutes()
@@ -143,7 +143,7 @@ pipelines (event, from, to) definicja miejsc, gdzie i co ma być z czym połącz
 
 
 ## jPaths
-![jRoutes](https://logo.jRoutes.com/2/cover.png)
+![jRoutes](https://logo.jpaths.com/2/cover.png)
 
 + jPaths()
 
@@ -154,7 +154,7 @@ routing dla url
 
 
 ### jRuns
-![jRoutes](https://logo.jRoutes.com/2/cover.png)
+![jRoutes](https://logo.jruns.com/2/cover.png)
 + jRuns()
 
 devops part

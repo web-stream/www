@@ -84,7 +84,7 @@ Wydzieliłem nawet biblioteki do ładowania, definicji JSON oraz do Ładowania i
 
 
 
-### let json
+### [let json](https://www.letjson.com)
 ![let json](https://logo.letjson.com/1/cover.png)
 
 + letJson()
@@ -94,7 +94,7 @@ pobieranie samego jsona
 
 
 
-### json def
+### [json def](https://www.jsondef.com)
 ![json def](https://logo.jsondef.com/2/cover.png)
 
 
@@ -103,7 +103,7 @@ okreslanie oczekiwanej struktury oraz podłączenie każdego elementu JSON pod k
 
 
 
-### jBodys
+### [jBodys](https://www.jbodys.com)
 ![jBodys](https://logo.jbodys.com/2/cover.png)
 
 
@@ -124,7 +124,7 @@ W anstaepnej wersji również określanie wersji
       
 
 
-### jLoads
+### [jLoads](https://www.jloads.com)
 ![jLoads](https://logo.jloads.com/2/cover.png)
 
 + jLoads()
@@ -134,7 +134,7 @@ Działanie na drzewie DOM, ładowanie stron do konrketnych tagów przy ładowani
 pliki będą tylko definiowały same zależnosci:
 
 
-### jRoutes
+### [jRoutes](https://www.jroutes.com)
 ![jRoutes](https://logo.jroutes.com/2/cover.png)
 
 
@@ -142,7 +142,7 @@ pliki będą tylko definiowały same zależnosci:
 pipelines (event, from, to) definicja miejsc, gdzie i co ma być z czym połączone z jLoads na HTML
 
 
-## jPaths
+## [jPaths](https://www.jpaths.com)
 ![jRoutes](https://logo.jpaths.com/2/cover.png)
 
 + jPaths()
@@ -153,7 +153,7 @@ routing dla url
 
 
 
-### jRuns
+### [jRuns](https://www.jruns.com)
 ![jRoutes](https://logo.jruns.com/2/cover.png)
 + jRuns()
 

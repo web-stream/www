@@ -25,17 +25,6 @@ Over modularity each website can talk to another without barrier...
 
 ### Supported media
 
-+ html
-+ txt
-+ markdown
-+ mp3
-+ wav
-+ js
-
-
-
-### Media
-
 Ładowanie mediów tekstowych, kodu aplikacji, filmów, głosu, itp.
 
 + html
@@ -47,6 +36,11 @@ Over modularity each website can talk to another without barrier...
 + php
 + python
 
+
+# why?
+Because we can improve our stack without clouds
+
+[more about limitations of CLOUD](CLOUD.md)
 
 # Powstanie
 

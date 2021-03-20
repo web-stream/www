@@ -70,11 +70,8 @@ okreslanie oczekiwanej struktury oraz podłączenie każdego elementu JSON pod k
 
 ### jBodys()
 
-
-### jLoads()
-
-ładowanie konkretnych url do formatu wyświetlanego w HTML bez okreslenia miejsca gdzie ma być załadowane,
-pliki będą tylko definiowały same zależnosci:
+Definicja moułu, poprzez określenie zalezności ładowania 
+W anstaepnej wersji również określanie wersji
 
 
       {
@@ -85,6 +82,15 @@ pliki będą tylko definiowały same zależnosci:
             "submit.js"
         ]
       }
+      
+
+
+### jLoads()
+
+Działanie na drzewie DOM, ładowanie stron do konrketnych tagów przy ładowaniu strony
+Ładowanie konkretnych zasobów/mediów poprz ich adres url do formatu wyświetlanego w HTML bez okreslenia miejsca gdzie ma być załadowane,
+pliki będą tylko definiowały same zależnosci:
+
 
 ### jRoutes()
 pipelines (event, from, to) definicja miejsc, gdzie i co ma być z czym połączone z jLoads na HTML

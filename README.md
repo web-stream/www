@@ -34,9 +34,30 @@ Over modularity each website can talk to another without barrier...
 
 
 # Powstanie
+
+pierwsze kroki:
++ jLoads
++ WebStream
+
+## jLoads
+
+Biblioteka jLoads była jednym z pierwszym implementacji podejścia modułowego w sofwtare developmencie, miała za zadanie załadowanie wszystkich potrzebnych mediów na stronę www.
+
+
 w związku z rozwojem bilbioteki i modularyzacją samej biblioteki potrzebny był wspólny mianownik do połączenia narzędzi tworzących ekosystem do streamowania interface-ów aplikacji webowej.
 
+
+Po wykonaniu prototypu jLoads udało się określić strukturę biblioteki w kontekście użycia, czyli zmodularyzować.
+
+Wydzieliłem nawet biblioteki do ładowania, definicji JSON oraz do Ładowania i routowania mediów
+
+
 ## Moduły WebStream
+
+
+Projekt obecnie nazywa się WebStream, jest zbiorem kilku modularnych funkcji, pozwalających na wykorzystanie potencjału jaki leży w protokole http
+i naturalnej predyspozycji jezyka JavaScript do prototypowania.
+
 
 [Strona projektu WebStream](https://www.webstream.dev/)
 

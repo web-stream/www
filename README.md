@@ -14,8 +14,9 @@ Streaming application/interface directly on frontend, withoud building backend s
     
 ## AaaS - Application as a Stream
 
-Supported by WebStream.
-WebStream is an ecosystem for web-development
+AaaS is supported by WebStream.
+
++ WebStream is an ecosystem for web-development
 
 ## How WebStream work's?
 

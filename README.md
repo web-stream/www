@@ -85,24 +85,26 @@ Wydzieliłem nawet biblioteki do ładowania, definicji JSON oraz do Ładowania i
 
 
 ### let json
-![let json](https://logo.letjson.com/2/cover.png)
+![let json](https://logo.letjson.com/3/cover.png)
 
 + letJson()
 pobieranie samego jsona
 
-ładowanie JSON 
+ładowanie JSON
+
 
 
 ### json def
-![json def](https://logo.jsondef.com/3/cover.png)
+![json def](https://logo.jsondef.com/2/cover.png)
 
 
 + jsonDef()
 okreslanie oczekiwanej struktury oraz podłączenie każdego elementu JSON pod konrketną funkcję
 
 
+
 ### jBodys
-![jBodys](https://logo.jBodys.com/3/cover.png)
+![jBodys](https://logo.jBodys.com/2/cover.png)
 
 
 + jBodys()
@@ -141,6 +143,7 @@ pipelines (event, from, to) definicja miejsc, gdzie i co ma być z czym połącz
 
 
 ## jPaths
+![jRoutes](https://logo.jRoutes.com/2/cover.png)
 
 + jPaths()
 
@@ -149,13 +152,15 @@ routing dla url
 + event listener
 
 
-### jRuns
 
+### jRuns
+![jRoutes](https://logo.jRoutes.com/2/cover.png)
 + jRuns()
 
 devops part
 + deployment
 + monitoring
+
 
 
 

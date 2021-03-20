@@ -1,7 +1,7 @@
 ![logo webstream](https://logo.webstream.dev/3/cover.png)
 
 # [WebStream](https://www.webstream.dev/)
-Streaming application/interface directly on frontend, withoud building backend side
+Streaming application/interface directly on frontend, without building backend side
 + jest modularnym standardem ładowania mediów na stronę  www, umożliwjaącym implementację streamowania poprzez protokół HTTP
 
 ## Current Technologies at 2021

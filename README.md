@@ -135,7 +135,7 @@ pliki będą tylko definiowały same zależnosci:
 
 
 ### jRoutes
-![jRoutes](https://logo.jroutes.com/3/cover.png)
+![jRoutes](https://logo.jroutes.com/2/cover.png)
 
 
 + jRoutes()

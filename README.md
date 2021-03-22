@@ -4,6 +4,9 @@
 Streaming application/interface directly on frontend, without building backend side
 + jest modularnym standardem ładowania mediów na stronę  www, umożliwjaącym implementację streamowania poprzez protokół HTTP
 
+https://openjsf.org/projects/
+
+
 ## Current Technologies at 2021
 + Single Page Application (SPA)
 + Progressive Web App (PWA)

@@ -6,7 +6,9 @@ Streaming application/interface directly on frontend, without building backend s
 
 + [Hosted Projects - OpenJS Foundation](https://openjsf.org/projects/)
 
-+ [Wapka, Softreck’s OpenSource Deployment Ecosystem | docs](https://docs.wapka.pl/)
++ [Wapka, Softreck’s OpenSource Deployment Ecosystem - docs](https://docs.wapka.pl/)
+
++ [JavaScript End to End Testing Framework - cypress.io](https://www.cypress.io/)
 
 ## Current Technologies at 2021
 + Single Page Application (SPA)

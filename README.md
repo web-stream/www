@@ -4,8 +4,9 @@
 Streaming application/interface directly on frontend, without building backend side
 + jest modularnym standardem ładowania mediów na stronę  www, umożliwjaącym implementację streamowania poprzez protokół HTTP
 
-https://openjsf.org/projects/
++ [Hosted Projects - OpenJS Foundation](https://openjsf.org/projects/)
 
++ [Wapka, Softreck’s OpenSource Deployment Ecosystem | docs](https://docs.wapka.pl/)
 
 ## Current Technologies at 2021
 + Single Page Application (SPA)

@@ -121,8 +121,7 @@ oraz error, gdy plik nie istnieje, lub nie ma odpowiedniego formatu
     );
 
 ### 2. użycie z adresem url, bez callback do error, ale throw exception
-
-    letJson( String  url, Function  json, Function  item)     
+     
     letJson(
         "get.domain.com/file.json",
         function(json) {

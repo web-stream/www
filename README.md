@@ -100,20 +100,39 @@ Wydzieliłem nawet biblioteki do ładowania, definicji JSON oraz do Ładowania i
         }catch(){
 
         }
+        
+        
 
 
 pobieranie pliku json z URL
 możliwość kontroli procesu poprzez funkcję succes w przypadku poprawnego pobrania
 oraz error, gdy plik nie istnieje, lub nie ma odpowiedniego formatu
 
-### użycie z adresem url
+### 1. użycie z adresem url, callback: success, error
 
     letJson(
         "get.domain.com/file.json",
         function(name, value, json) {
 
+        },
+        function(error) {
+
         }
     );
+
+### 2. użycie z adresem url, bez callback do error, ale throw exception
+
+    letJson( String  url, Function  json, Function  item)     
+    letJson(
+        "get.domain.com/file.json",
+        function(json) {
+
+        },
+        function(item) {
+
+        }
+    );
+
 
 
 ## [json def](https://www.jsondef.com)

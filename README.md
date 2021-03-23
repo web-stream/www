@@ -87,13 +87,19 @@ Wydzieliłem nawet biblioteki do ładowania, definicji JSON oraz do Ładowania i
 ## [let json](https://www.letjson.com)
 ![let json](https://logo.letjson.com/1/cover.png)
 
-### 
+
+
+### Rozwiązania
+pobieranie pliku json z URL
+możliwość kontroli procesu poprzez funkcję succes w przypadku poprawnego pobrania
+oraz error, gdy plik nie istnieje, lub nie ma odpowiedniego formatu
 
 1. osobne callback-i do pozytywnego i negatywnego przypadku
 
         letJson( String  url, Function  success, Function  error)     
 
-2. Metoda try - catch
+
+2. Metoda try - catch, bez callback, do error
 
         try{
             letJson( String  url, Function  json, Function  item)     
@@ -103,12 +109,9 @@ Wydzieliłem nawet biblioteki do ładowania, definicji JSON oraz do Ładowania i
         
         
 
+### Przykłady użycia
 
-pobieranie pliku json z URL
-możliwość kontroli procesu poprzez funkcję succes w przypadku poprawnego pobrania
-oraz error, gdy plik nie istnieje, lub nie ma odpowiedniego formatu
-
-### 1. użycie z adresem url, callback: success, error
+#### 1. użycie z adresem url, callback: success, error
 
     letJson(
         "get.domain.com/file.json",
@@ -120,15 +123,15 @@ oraz error, gdy plik nie istnieje, lub nie ma odpowiedniego formatu
         }
     );
 
-### 2. użycie z adresem url, bez callback do error, ale throw exception
+#### 2. użycie z adresem url, bez callback do error, ale throw exception
      
     letJson(
         "get.domain.com/file.json",
         function(json) {
-
+            // zwraca całość pliku JSON
         },
         function(item) {
-
+            // zwraca każdorazowo element lub parę klucz, wartość
         }
     );
 
@@ -138,16 +141,15 @@ oraz error, gdy plik nie istnieje, lub nie ma odpowiedniego formatu
 ![json def](https://logo.jsondef.com/2/cover.png)
 
 
-+ jsonDef()
 okreslanie oczekiwanej struktury oraz podłączenie każdego elementu JSON pod konrketną funkcję
 
 ### def.json
     
-        {
-            "xpath/name":"function1",
-            "xpath/name":"function1"
-            "xpath/name":"function1"
-        }
+    {
+        "xpath/name":"function1",
+        "xpath/name":"function1"
+        "xpath/name":"function1"
+    }
         
 ### jsonDef(json, success, error)       
 
@@ -163,15 +165,16 @@ okreslanie oczekiwanej struktury oraz podłączenie każdego elementu JSON pod k
 
     letJson(
         "get.domain.com/def.json",
-        function(name, value, json) {
-        letJson(
-                "get.domain.com/file.json",
-                function(name, value, json) {
+        function(json) {
+            letJson(
+                    "get.domain.com/file.json",
+                    function(name, value, json) {
 
 
 
-                }
-        )
+                    }
+            )
+       }
     );
     
 

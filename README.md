@@ -90,6 +90,12 @@ Wydzieliłem nawet biblioteki do ładowania, definicji JSON oraz do Ładowania i
 + letJson()
 pobieranie samego jsona
 
+### letJson(json, callback)     
+
+### użycie z adresem url
+
+letJson("get.domain.com/file.json", callback());
+
 ładowanie JSON
 
 
@@ -100,6 +106,29 @@ pobieranie samego jsona
 
 + jsonDef()
 okreslanie oczekiwanej struktury oraz podłączenie każdego elementu JSON pod konrketną funkcję
+
+### def.json
+    
+        {
+            "xpath/name":"function1",
+            "xpath/name":"function1"
+            "xpath/name":"function1"
+        }
+        
+### jsonDef(json, callback)        
+
+    jsonDef(
+        letJson("get.domain.com/file.json"),
+        function(name, value, json) {
+
+        }
+    );
+    
+
+### Pobranie definicji dla pliku JSON
+
+letJson("get.domain.com/def.json");
+
 
 
 

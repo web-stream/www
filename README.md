@@ -91,12 +91,12 @@ Wydzieliłem nawet biblioteki do ładowania, definicji JSON oraz do Ładowania i
 
 1. osobne callback-i do pozytywnego i negatywnego przypadku
 
-        letJson(url, success, error)     
+        letJson( String  url, Function  success, Function  error)     
 
 2. Metoda try - catch
 
         try{
-            letJson(url, json, item)     
+            letJson( String  url, Function  json, Function  item)     
         }catch(){
 
         }

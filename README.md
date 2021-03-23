@@ -87,17 +87,33 @@ Wydzieliłem nawet biblioteki do ładowania, definicji JSON oraz do Ładowania i
 ## [let json](https://www.letjson.com)
 ![let json](https://logo.letjson.com/1/cover.png)
 
-+ letJson()
-pobieranie samego jsona
+### 
 
-### letJson(json, callback)     
+1. osobne callback-i do pozytywnego i negatywnego przypadku
+
+        letJson(url, success, error)     
+
+2. Metoda try - catch
+
+        try{
+            letJson(url, json, item)     
+        }catch(){
+
+        }
+
+
+pobieranie pliku json z URL
+możliwość kontroli procesu poprzez funkcję succes w przypadku poprawnego pobrania
+oraz error, gdy plik nie istnieje, lub nie ma odpowiedniego formatu
 
 ### użycie z adresem url
 
-letJson("get.domain.com/file.json", callback());
+    letJson(
+        "get.domain.com/file.json",
+        function(name, value, json) {
 
-ładowanie JSON
-
+        }
+    );
 
 
 ## [json def](https://www.jsondef.com)
@@ -115,10 +131,10 @@ okreslanie oczekiwanej struktury oraz podłączenie każdego elementu JSON pod k
             "xpath/name":"function1"
         }
         
-### jsonDef(json, callback)        
+### jsonDef(json, success, error)       
 
     jsonDef(
-        letJson("get.domain.com/file.json"),
+        "get.domain.com/def.json",
         function(name, value, json) {
 
         }
@@ -127,7 +143,20 @@ okreslanie oczekiwanej struktury oraz podłączenie każdego elementu JSON pod k
 
 ### Pobranie definicji dla pliku JSON
 
-letJson("get.domain.com/def.json");
+    letJson(
+        "get.domain.com/def.json",
+        function(name, value, json) {
+        letJson(
+                "get.domain.com/file.json",
+                function(name, value, json) {
+
+
+
+                }
+        )
+    );
+    
+
 
 
 

@@ -202,6 +202,18 @@ W anstaepnej wersji również określanie wersji
       }
       
 
+Wielopoziomiowe pobieranie plikó JSON
+Budowanie struktury pliku JSON z wielu plików
+
+      {
+        "/form/field/submit.json": {
+            "newsletter.json": [
+                "submit.json",
+                "/form/field/text.json",
+                "/form/field/email.json",        
+            ]
+        }
+      }
 
 ## [jLoads](https://www.jloads.com)
 ![jLoads](https://logo.jloads.com/2/cover.png)

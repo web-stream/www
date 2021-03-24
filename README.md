@@ -136,9 +136,12 @@ oraz error, gdy plik nie istnieje, lub nie ma odpowiedniego formatu
     );
 
 
-#### 2. użycie z adresem url, bez callback do error, ale throw exception
+#### 3. użycie z adresem url, oddzielne parametry jako funckje, 
 
-+ asyncrhonicznie
++ zwiększa przejrzystosć kodu, 
++ pozwala na łatwą rozbudowę
+
+##### asyncrhonicznie
     
 
         letJson(
@@ -155,7 +158,7 @@ oraz error, gdy plik nie istnieje, lub nie ma odpowiedniego formatu
             }
         );
 
-+ synchronicznie
+##### synchronicznie
 
         var json = letJson("get.domain.com/file.json");
         

@@ -18,7 +18,7 @@ Streaming application/interface directly on frontend, without building backend s
     + native
     + json based communication
     
-The Stack
+## The Stack
 
 How your stack looks will depend on how you want to render your application. Here is a comprehensive discussion about that, but in a nutshell:
 
@@ -35,6 +35,54 @@ But there are downsides too. Apart from the extra maintenance costs, we will hav
 The technologies that are adopted for this approach are NextJs, NuxtJs, and GatsbyJs.
 
 
+
+### Turbolinks
+https://github.com/turbolinks/turbolinks
+Turbolinks® makes navigating your web application faster. Get the performance benefits of a single-page application without the added complexity of a client-side JavaScript framework. Use HTML to render your views on the server side and link to pages as usual. When you follow a link, Turbolinks automatically fetches the page, swaps in its <body>, and merges its <head>, all without incurring the cost of a full page load.
+
+
+
+
+### Phoenix LiveView
+https://github.com/phoenixframework/phoenix_live_view
+
+Phoenix LiveView enables rich, real-time user experiences with server-rendered HTML.
+
+After you [install Elixir](https://elixir-lang.org/install.html)
+in your machine, you can create your first LiveView app in two
+steps:
+
+    $ mix archive.install hex phx_new
+    $ mix phx.new demo --live
+
+#### Features
+
+  * Use a declarative model to render HTML on the server
+    over WebSockets with optional LongPolling fallback
+
+  * Smart templating and change tracking - after connected,
+    LiveView sends only what changed to the client, skipping
+    the template markup and reducing the payload
+
+  * Live form validation with file upload support
+
+  * A rich integration API with the client with `phx-click`,
+    `phx-focus`, `phx-blur`, `phx-submit`, etc. `phx-hook` is
+    included for the cases where you have to write JavaScript
+
+  * Code reuse via components, which break templates, state, and
+    event handling into reusable bits, which is essential in large
+    applications
+
+  * Live navigation to enrich links and redirects to only load the
+    minimum amount of content as users navigate between pages
+
+  * A latency simulator so you can emulate how slow clients will
+    interact with your application
+
+  * Testing tools that allow you to write a confident test suite
+    without the complexity of running a whole browser alongside
+    your tests
 ## AaaS - Application as a Stream
 
 AaaS is supported by WebStream.

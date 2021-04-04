@@ -18,6 +18,23 @@ Streaming application/interface directly on frontend, without building backend s
     + native
     + json based communication
     
+The Stack
+
+How your stack looks will depend on how you want to render your application. Here is a comprehensive discussion about that, but in a nutshell:
+
+    Client-side rendering(CSR); SPA; JSON APIs —
+    This is perhaps the most popular approach. It's great for building interactive web applications. But be aware of its downsides and steps to mitigate them. This is the approach I took, so we will talk about it in a lot of detail.
+
+    Hybrid CSR; Both client-side and server-side rendering(SSR) —
+    With this approach, you still build your SPA. But when a user requests your app, for example, the homepage, you render the homepage's component into its static HTML in your server and serve it to the user. Then at the user's browser, hydration will happen so the whole thing becomes the intended SPA.
+
+The main benefits of this approach are that you get good SEO and users can see your stuff sooner (faster 'First Meaningful Paint').
+
+But there are downsides too. Apart from the extra maintenance costs, we will have to download the same payload twice—First, the HTML, and second, its Javascript counterpart for the 'hydration' which will exert significant work on the browser's main thread. This prolongs the 'First time to interactive', and hence diminishes the benefits gained from a faster 'First meaningful paint'.
+
+The technologies that are adopted for this approach are NextJs, NuxtJs, and GatsbyJs.
+
+
 ## AaaS - Application as a Stream
 
 AaaS is supported by WebStream.

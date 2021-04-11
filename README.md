@@ -2,6 +2,9 @@
 
 # [WebStream](https://www.webstream.dev/)
 Streaming application/interface directly on frontend, without building backend side
+is part of [wapka ecosystem](https://docs.wapka.pl/) to build Application based on PaaS infrastructure
+
+
 + jest modularnym standardem ładowania mediów na stronę  www, umożliwjaącym implementację streamowania poprzez protokół HTTP
 
 + [Hosted Projects - OpenJS Foundation](https://openjsf.org/projects/)

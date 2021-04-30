@@ -1,3 +1,8 @@
+.idea/
+load_func.php
+def_json.php
+let_json.php
+
 # Logs
 logs
 *.log

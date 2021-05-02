@@ -40,7 +40,7 @@ try {
             });
     });
 
-} catch (ErrorException $e) {
+} catch (Exception $e) {
 
     def_json('', ['error'=> $e->getMessage()], function ($json) {
         // show header with json data

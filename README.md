@@ -118,6 +118,28 @@ Because we can improve our stack without clouds
 
 [more about limitations of CLOUD](CLOUD.md)
 
+## story
+    
+Gdy korzystamy z własnej implementacji frontend <-> mikroserwisy możemy napotkać niektóre z tych problemów:
+
++ wiele wersji tej samej biblioteki ładujących się z losową kolejnością i nadpisujących się,
++ style z jednej aplikacji nadpisywały drugą,
++ brak prostego sposobu na dodanie kolejnej aplikacji utworzonej w innym frameworku,
++ problemy z routingiem,
++ brak lazy loading.
+
+### iframe
+Wykorzystanie iframe, pozwala na łatwe wdrożeni, niestety ostylowanie jest trudne i niewygodne a dostępność dla ludzi korzystających z czytników ekranowych jest jeszcze gorzej. 
+
+### single-spa
+Mikrofrontend pozwala nam łączyć kilka aplikacji napisanych nawet w różnych frameworkach
+Frameworki są tylko narzędziem, najważniejsza natomiast dla nas jest możliwość podzielenia aplikacji funkcjonalnie i przydzielenia tych części zespołom.
+    
+### Unikatowe ID
+Id elementów DOM muszą być unikatowe dla aplikacji i jej elementów gdy są wyświetlane razem.
+Rozwiązaliśmy ten problem poprzez dodanie nazwy aplikacji przed każdym id np. web-chat-header, web-admin-header, ...
+    
+    
 # Powstanie
 
 pierwsze kroki:

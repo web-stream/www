@@ -479,3 +479,6 @@ Piping in data from Node Streams
     // useful if you need a TransformStream-like object for external APIs.
     var transformStream = _.pipeline(_.filter(isBlogpost));
     docs.pipe(transformStream).pipe(output);
+
+---
++ [edit](https://github.com/web-stream/www/edit/main/README.md)

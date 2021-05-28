@@ -99,6 +99,12 @@ AaaS is supported by WebStream.
 Load any media on website without reload page, now stream each website without reload.
 Over modularity each website can talk to another without barrier...
 
+### Unikatowe ID
+
+Id elementów DOM muszą być unikatowe dla aplikacji i jej elementów gdy są wyświetlane razem.
+Rozwiązaliśmy ten problem poprzez dodanie nazwy aplikacji przed każdym id np. web-chat-header, web-admin-header, ...
+
+    
 ### Supported media
 
 Ładowanie mediów tekstowych, kodu aplikacji, filmów, głosu, itp.
@@ -131,13 +137,43 @@ Gdy korzystamy z własnej implementacji frontend <-> mikroserwisy możemy napotk
 ### iframe
 Wykorzystanie iframe, pozwala na łatwe wdrożeni, niestety ostylowanie jest trudne i niewygodne a dostępność dla ludzi korzystających z czytników ekranowych jest jeszcze gorzej. 
 
-### single-spa
+Najprostszy sposób, aby zacząć: możemy użyć okna postMessage() do komunikacji między aplikacjami.
+
+   
+###  Single SPA
+
+
+Jest to framework do komponowania ze sobą aplikacji frontendowych. Jeśli chcesz rozpocząć prawdziwy projekt, wybierz ten poniżej:
+
 Mikrofrontend pozwala nam łączyć kilka aplikacji napisanych nawet w różnych frameworkach
 Frameworki są tylko narzędziem, najważniejsza natomiast dla nas jest możliwość podzielenia aplikacji funkcjonalnie i przydzielenia tych części zespołom.
+
+https://single-spa.js.org
     
-### Unikatowe ID
-Id elementów DOM muszą być unikatowe dla aplikacji i jej elementów gdy są wyświetlane razem.
-Rozwiązaliśmy ten problem poprzez dodanie nazwy aplikacji przed każdym id np. web-chat-header, web-admin-header, ...
+    
+
+### Frint
+
+To kolejny framework do komponowania ze sobą aplikacji frontendowych. Bardziej elastyczny niż Single SPA, ale nowszy i mniej popularny:
+
+https://frint.js.org
+
+    
+    
+### Komponenty webowe
+
+Nie jest to framework, ale funkcja przeglądarki i być może przyszłość Internetu. Oto artykuł na ten temat:
+
+https://www.webcomponents.org/introduction
+    
+    
+
+### Taylor
+
+Framework ten wykorzystuje inne podejście, tworząc stronę routingu na backendzie za pomocą node.js. Jeśli pomysł Ci się podoba, warto zobaczyć:
+
+https://github.com/zalando/tailor
+    
     
     
 # Powstanie

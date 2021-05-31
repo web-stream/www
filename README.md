@@ -62,32 +62,23 @@ steps:
 
 #### Features
 
-  * Use a declarative model to render HTML on the server
-    over WebSockets with optional LongPolling fallback
+* Use a declarative model to render HTML on the server over WebSockets with optional LongPolling fallback
 
-  * Smart templating and change tracking - after connected,
-    LiveView sends only what changed to the client, skipping
-    the template markup and reducing the payload
+* Smart templating and change tracking - after connected, LiveView sends only what changed to the client, skipping the template markup and reducing the payload
 
-  * Live form validation with file upload support
+* Live form validation with file upload support
 
-  * A rich integration API with the client with `phx-click`,
-    `phx-focus`, `phx-blur`, `phx-submit`, etc. `phx-hook` is
-    included for the cases where you have to write JavaScript
+* A rich integration API with the client with `phx-click`, `phx-focus`, `phx-blur`, `phx-submit`, etc. `phx-hook` is included for the cases where you have to write JavaScript
 
-  * Code reuse via components, which break templates, state, and
-    event handling into reusable bits, which is essential in large
-    applications
+* Code reuse via components, which break templates, state, and event handling into reusable bits, which is essential in large applications
 
-  * Live navigation to enrich links and redirects to only load the
-    minimum amount of content as users navigate between pages
+* Live navigation to enrich links and redirects to only load the minimum amount of content as users navigate between pages
 
-  * A latency simulator so you can emulate how slow clients will
-    interact with your application
+* A latency simulator so you can emulate how slow clients will interact with your application
 
-  * Testing tools that allow you to write a confident test suite
-    without the complexity of running a whole browser alongside
-    your tests
+* Testing tools that allow you to write a confident test suite without the complexity of running a whole browser alongside your tests
+
+
 ## AaaS - Application as a Stream
 
 AaaS is supported by WebStream.
@@ -224,35 +215,36 @@ oraz error, gdy plik nie istnieje, lub nie ma odpowiedniego formatu
 
 1. osobne callback-i do pozytywnego i negatywnego przypadku
 
-        letJson( String  url, Function  success, Function  error)     
-
+```js  
+letJson( String  url, Function  success, Function  error)     
+```
 
 2. Metoda try - catch, bez callback, do error
+```js
+try{
+    letJson( String  url, Function  json, Function  item)     
+}catch(){
 
-        try{
-            letJson( String  url, Function  json, Function  item)     
-        }catch(){
-
-        }
-        
-        
+}
+```   
 
 ### Przykłady użycia
 
 #### 1. użycie z adresem url, callback: success, error
+```js
+letJson(
+    "get.domain.com/file.json",
+    function(name, value, json) {
 
-    letJson(
-        "get.domain.com/file.json",
-        function(name, value, json) {
+    },
+    function(error) {
 
-        },
-        function(error) {
-
-        }
-    );
-
+    }
+);
+```
+    
 #### 2. użycie z adresem url, bez callback do error, ale throw exception
-```js     
+```js
 letJson(
     "get.domain.com/file.json",
     function(json) {

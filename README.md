@@ -122,7 +122,7 @@ Rozwiązaliśmy ten problem poprzez dodanie nazwy aplikacji przed każdym id np.
 # why?
 Because we can improve our stack without clouds
 
-[more about limitations of CLOUD](CLOUD.md)
+[more about limitations of CLOUDS](CLOUDS.md)
 
 ## story
     

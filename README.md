@@ -294,39 +294,40 @@ item(
 okreslanie oczekiwanej struktury oraz podłączenie każdego elementu JSON pod konrketną funkcję
 
 ### def.json
-    
-    {
-        "xpath/name":"function1",
-        "xpath/name":"function1"
-        "xpath/name":"function1"
-    }
-        
-### jsonDef(json, success, error)       
+```json    
+{
+    "xpath/name":"function1",
+    "xpath/name":"function1"
+    "xpath/name":"function1"
+}
+```
 
+### jsonDef(json, success, error)       
+```js
     jsonDef(
         "get.domain.com/def.json",
         function(name, value, json) {
 
         }
     );
-    
+```    
 
 ### Pobranie definicji dla pliku JSON
+```js
+letJson(
+    "get.domain.com/def.json",
+    function(json) {
+        letJson(
+                "get.domain.com/file.json",
+                function(name, value, json) {
 
-    letJson(
-        "get.domain.com/def.json",
-        function(json) {
-            letJson(
-                    "get.domain.com/file.json",
-                    function(name, value, json) {
 
 
-
-                    }
-            )
-       }
-    );
-    
+                }
+        )
+   }
+);
+```    
 
 
 
@@ -341,29 +342,30 @@ okreslanie oczekiwanej struktury oraz podłączenie każdego elementu JSON pod k
 Definicja moułu, poprzez określenie zalezności ładowania 
 W anstaepnej wersji również określanie wersji
 
-
-      {
-        "/form/field/text.css",
-        "/form/field/email.css",
-        "/form/field/submit.css",
-        "newsletter.html": [
-            "submit.js"
-        ]
-      }
-      
+```json
+{
+  "/form/field/text.css",
+  "/form/field/email.css",
+  "/form/field/submit.css",
+  "newsletter.html": [
+      "submit.js"
+  ]
+}
+```
 
 Wielopoziomiowe pobieranie plikó JSON
 Budowanie struktury pliku JSON z wielu plików
-
-      {
-        "/form/field/submit.json": {
-            "newsletter.json": [
-                "submit.json",
-                "/form/field/text.json",
-                "/form/field/email.json",        
-            ]
-        }
-      }
+```js
+{
+  "/form/field/submit.json": {
+      "newsletter.json": [
+          "submit.json",
+          "/form/field/text.json",
+          "/form/field/email.json",        
+      ]
+  }
+}
+```
 
 ## [jLoads](https://www.jloads.com)
 ![jLoads](https://logo.jloads.com/2/cover.png)

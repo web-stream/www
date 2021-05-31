@@ -62,32 +62,23 @@ steps:
 
 #### Features
 
-  * Use a declarative model to render HTML on the server
-    over WebSockets with optional LongPolling fallback
+* Use a declarative model to render HTML on the server over WebSockets with optional LongPolling fallback
 
-  * Smart templating and change tracking - after connected,
-    LiveView sends only what changed to the client, skipping
-    the template markup and reducing the payload
+* Smart templating and change tracking - after connected, LiveView sends only what changed to the client, skipping the template markup and reducing the payload
 
-  * Live form validation with file upload support
+* Live form validation with file upload support
 
-  * A rich integration API with the client with `phx-click`,
-    `phx-focus`, `phx-blur`, `phx-submit`, etc. `phx-hook` is
-    included for the cases where you have to write JavaScript
+* A rich integration API with the client with `phx-click`, `phx-focus`, `phx-blur`, `phx-submit`, etc. `phx-hook` is included for the cases where you have to write JavaScript
 
-  * Code reuse via components, which break templates, state, and
-    event handling into reusable bits, which is essential in large
-    applications
+* Code reuse via components, which break templates, state, and event handling into reusable bits, which is essential in large applications
 
-  * Live navigation to enrich links and redirects to only load the
-    minimum amount of content as users navigate between pages
+* Live navigation to enrich links and redirects to only load the minimum amount of content as users navigate between pages
 
-  * A latency simulator so you can emulate how slow clients will
-    interact with your application
+* A latency simulator so you can emulate how slow clients will interact with your application
 
-  * Testing tools that allow you to write a confident test suite
-    without the complexity of running a whole browser alongside
-    your tests
+* Testing tools that allow you to write a confident test suite without the complexity of running a whole browser alongside your tests
+
+
 ## AaaS - Application as a Stream
 
 AaaS is supported by WebStream.
@@ -99,6 +90,12 @@ AaaS is supported by WebStream.
 Load any media on website without reload page, now stream each website without reload.
 Over modularity each website can talk to another without barrier...
 
+### Unikatowe ID
+
+Id elementów DOM muszą być unikatowe dla aplikacji i jej elementów gdy są wyświetlane razem.
+Rozwiązaliśmy ten problem poprzez dodanie nazwy aplikacji przed każdym id np. web-chat-header, web-admin-header, ...
+
+    
 ### Supported media
 
 Ładowanie mediów tekstowych, kodu aplikacji, filmów, głosu, itp.
@@ -116,8 +113,60 @@ Over modularity each website can talk to another without barrier...
 # why?
 Because we can improve our stack without clouds
 
-[more about limitations of CLOUD](CLOUD.md)
+[more about limitations of CLOUDS](CLOUDS.md)
 
+## story
+    
+Gdy korzystamy z własnej implementacji frontend <-> mikroserwisy możemy napotkać niektóre z tych problemów:
+
++ wiele wersji tej samej biblioteki ładujących się z losową kolejnością i nadpisujących się,
++ style z jednej aplikacji nadpisywały drugą,
++ brak prostego sposobu na dodanie kolejnej aplikacji utworzonej w innym frameworku,
++ problemy z routingiem,
++ brak lazy loading.
+
+### iframe
+Wykorzystanie iframe, pozwala na łatwe wdrożeni, niestety ostylowanie jest trudne i niewygodne a dostępność dla ludzi korzystających z czytników ekranowych jest jeszcze gorzej. 
+
+Najprostszy sposób, aby zacząć: możemy użyć okna postMessage() do komunikacji między aplikacjami.
+
+   
+###  Single SPA
+
+
+Jest to framework do komponowania ze sobą aplikacji frontendowych. Jeśli chcesz rozpocząć prawdziwy projekt, wybierz ten poniżej:
+
+Mikrofrontend pozwala nam łączyć kilka aplikacji napisanych nawet w różnych frameworkach
+Frameworki są tylko narzędziem, najważniejsza natomiast dla nas jest możliwość podzielenia aplikacji funkcjonalnie i przydzielenia tych części zespołom.
+
+https://single-spa.js.org
+    
+    
+
+### Frint
+
+To kolejny framework do komponowania ze sobą aplikacji frontendowych. Bardziej elastyczny niż Single SPA, ale nowszy i mniej popularny:
+
+https://frint.js.org
+
+    
+    
+### Komponenty webowe
+
+Nie jest to framework, ale funkcja przeglądarki i być może przyszłość Internetu. Oto artykuł na ten temat:
+
+https://www.webcomponents.org/introduction
+    
+    
+
+### Taylor
+
+Framework ten wykorzystuje inne podejście, tworząc stronę routingu na backendzie za pomocą node.js. Jeśli pomysł Ci się podoba, warto zobaczyć:
+
+https://github.com/zalando/tailor
+    
+    
+    
 # Powstanie
 
 pierwsze kroki:
@@ -160,74 +209,78 @@ Wydzieliłem nawet biblioteki do ładowania, definicji JSON oraz do Ładowania i
 
 
 ### Rozwiązania
-pobieranie pliku json z URL
-możliwość kontroli procesu poprzez funkcję succes w przypadku poprawnego pobrania
-oraz error, gdy plik nie istnieje, lub nie ma odpowiedniego formatu
+    
+pobieranie pliku json z URL możliwość kontroli procesu poprzez funkcję succes w przypadku poprawnego pobrania oraz error, gdy plik nie istnieje, lub nie ma odpowiedniego formatu
 
-1. osobne callback-i do pozytywnego i negatywnego przypadku
+#### Osobne callback-i do pozytywnego i negatywnego przypadku
 
-        letJson( String  url, Function  success, Function  error)     
+```js  
+letJson( String  url, Function  success, Function  error)     
+```
 
+#### Metoda try - catch, bez callback, do error
+    
+```js
+try{
+    letJson( String  url, Function  json, Function  item)     
+}catch(){
 
-2. Metoda try - catch, bez callback, do error
-
-        try{
-            letJson( String  url, Function  json, Function  item)     
-        }catch(){
-
-        }
-        
-        
+}
+```   
 
 ### Przykłady użycia
 
 #### 1. użycie z adresem url, callback: success, error
+    
+```js
+letJson(
+    "get.domain.com/file.json",
+    function(name, value, json) {
 
-    letJson(
-        "get.domain.com/file.json",
-        function(name, value, json) {
+    },
+    function(error) {
 
-        },
-        function(error) {
-
-        }
-    );
-
+    }
+);
+```
+    
 #### 2. użycie z adresem url, bez callback do error, ale throw exception
-     
-    letJson(
-        "get.domain.com/file.json",
-        function(json) {
-            // zwraca całość pliku JSON
-        },
-        function(item) {
-            // zwraca każdorazowo element lub parę klucz, wartość
-        }
-    );
+    
+```js
+letJson(
+    "get.domain.com/file.json",
+    function(json) {
+        // zwraca całość pliku JSON
+    },
+    function(item) {
+        // zwraca każdorazowo element lub parę klucz, wartość
+    }
+);
+```
 
-
-#### 3. użycie z adresem url, oddzielne parametry jako funckje, 
+#### 3. użycie z adresem url, oddzielne parametry jako funkcje, 
 
 + zwiększa przejrzystosć kodu, 
 + pozwala na łatwą rozbudowę
 
-##### asyncrhonicznie
+##### asynchronicznie
+
+```js
+letJson(
+    "get.domain.com/file.json"       
+).
+json(
+    function(json) {
+        // zwraca całość pliku JSON
+    }
+).
+item(
+    function(item) {
+        // zwraca każdorazowo element lub parę klucz, wartość
+    }
+);
+```
     
-
-        letJson(
-            "get.domain.com/file.json"       
-        ).
-        json(
-            function(json) {
-                // zwraca całość pliku JSON
-            }
-        ).
-        item(
-            function(item) {
-                // zwraca każdorazowo element lub parę klucz, wartość
-            }
-        );
-
 ##### synchronicznie
 
         var json = letJson("get.domain.com/file.json");
@@ -457,3 +510,6 @@ Piping in data from Node Streams
     // useful if you need a TransformStream-like object for external APIs.
     var transformStream = _.pipeline(_.filter(isBlogpost));
     docs.pipe(transformStream).pipe(output);
+
+---
++ [edit](https://github.com/web-stream/www/edit/main/README.md)

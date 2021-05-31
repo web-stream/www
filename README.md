@@ -214,13 +214,13 @@ pobieranie pliku json z URL możliwość kontroli procesu poprzez funkcję succe
 
 #### Osobne callback-i do pozytywnego i negatywnego przypadku
 
-```js  
+```php 
 letJson( String  url, Function  success, Function  error)     
 ```
 
 #### Metoda try - catch, bez callback, do error
     
-```js
+```php
 try{
     letJson( String  url, Function  json, Function  item)     
 }catch(){
@@ -294,6 +294,7 @@ item(
 okreslanie oczekiwanej struktury oraz podłączenie każdego elementu JSON pod konrketną funkcję
 
 ### def.json
+
 ```json    
 {
     "xpath/name":"function1",
@@ -302,7 +303,8 @@ okreslanie oczekiwanej struktury oraz podłączenie każdego elementu JSON pod k
 }
 ```
 
-### jsonDef(json, success, error)       
+### jsonDef(json, success, error)    
+
 ```js
     jsonDef(
         "get.domain.com/def.json",
@@ -313,6 +315,7 @@ okreslanie oczekiwanej struktury oraz podłączenie każdego elementu JSON pod k
 ```    
 
 ### Pobranie definicji dla pliku JSON
+
 ```js
 letJson(
     "get.domain.com/def.json",
@@ -355,7 +358,8 @@ W anstaepnej wersji również określanie wersji
 
 Wielopoziomiowe pobieranie plikó JSON
 Budowanie struktury pliku JSON z wielu plików
-```js
+
+```json
 {
   "/form/field/submit.json": {
       "newsletter.json": [

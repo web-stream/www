@@ -252,40 +252,41 @@ oraz error, gdy plik nie istnieje, lub nie ma odpowiedniego formatu
     );
 
 #### 2. użycie z adresem url, bez callback do error, ale throw exception
-     
-    letJson(
-        "get.domain.com/file.json",
-        function(json) {
-            // zwraca całość pliku JSON
-        },
-        function(item) {
-            // zwraca każdorazowo element lub parę klucz, wartość
-        }
-    );
+```js     
+letJson(
+    "get.domain.com/file.json",
+    function(json) {
+        // zwraca całość pliku JSON
+    },
+    function(item) {
+        // zwraca każdorazowo element lub parę klucz, wartość
+    }
+);
+```
 
-
-#### 3. użycie z adresem url, oddzielne parametry jako funckje, 
+#### 3. użycie z adresem url, oddzielne parametry jako funkcje, 
 
 + zwiększa przejrzystosć kodu, 
 + pozwala na łatwą rozbudowę
 
-##### asyncrhonicznie
+##### asynchronicznie
+
+```js
+letJson(
+    "get.domain.com/file.json"       
+).
+json(
+    function(json) {
+        // zwraca całość pliku JSON
+    }
+).
+item(
+    function(item) {
+        // zwraca każdorazowo element lub parę klucz, wartość
+    }
+);
+```
     
-
-        letJson(
-            "get.domain.com/file.json"       
-        ).
-        json(
-            function(json) {
-                // zwraca całość pliku JSON
-            }
-        ).
-        item(
-            function(item) {
-                // zwraca każdorazowo element lub parę klucz, wartość
-            }
-        );
-
 ##### synchronicznie
 
         var json = letJson("get.domain.com/file.json");

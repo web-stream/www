@@ -209,17 +209,17 @@ Wydzieliłem nawet biblioteki do ładowania, definicji JSON oraz do Ładowania i
 
 
 ### Rozwiązania
-pobieranie pliku json z URL
-możliwość kontroli procesu poprzez funkcję succes w przypadku poprawnego pobrania
-oraz error, gdy plik nie istnieje, lub nie ma odpowiedniego formatu
+    
+pobieranie pliku json z URL możliwość kontroli procesu poprzez funkcję succes w przypadku poprawnego pobrania oraz error, gdy plik nie istnieje, lub nie ma odpowiedniego formatu
 
-1. osobne callback-i do pozytywnego i negatywnego przypadku
+#### Osobne callback-i do pozytywnego i negatywnego przypadku
 
 ```js  
 letJson( String  url, Function  success, Function  error)     
 ```
 
-2. Metoda try - catch, bez callback, do error
+#### Metoda try - catch, bez callback, do error
+    
 ```js
 try{
     letJson( String  url, Function  json, Function  item)     
@@ -231,6 +231,7 @@ try{
 ### Przykłady użycia
 
 #### 1. użycie z adresem url, callback: success, error
+    
 ```js
 letJson(
     "get.domain.com/file.json",
@@ -244,6 +245,7 @@ letJson(
 ```
     
 #### 2. użycie z adresem url, bez callback do error, ale throw exception
+    
 ```js
 letJson(
     "get.domain.com/file.json",

@@ -1,7 +1,9 @@
 ![logo webstream](https://logo.webstream.dev/3/cover.png)
 
 <img alt="open collective badge" src="https://opencollective.com/webstream/tiers/backer/badge.svg?label=backer&color=brightgreen" />
+
 ---
+
 # [WebStream](https://www.webstream.dev/)
 Streaming application/interface directly on frontend, without building backend side
 is part of [wapka ecosystem](https://docs.wapka.pl/) to build Application based on PaaS infrastructure

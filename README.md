@@ -1,5 +1,11 @@
 ![logo webstream](https://logo.webstream.dev/3/cover.png)
 
+<img alt="open collective badge" src="https://opencollective.com/webstream/tiers/backer/badge.svg?label=backer&color=brightgreen" />
+<img alt="open collective badge" src="https://opencollective.com/webstream/tiers/sponsor/badge.svg?label=sponsor&color=brightgreen" />
+<object type="image/svg+xml" data="https://opencollective.com/webstream/tiers/backer.svg?avatarHeight=36&width=600"></object>
+
+---
+
 # [WebStream](https://www.webstream.dev/)
 Streaming application/interface directly on frontend, without building backend side
 is part of [wapka ecosystem](https://docs.wapka.pl/) to build Application based on PaaS infrastructure
@@ -12,6 +18,9 @@ is part of [wapka ecosystem](https://docs.wapka.pl/) to build Application based 
 
 + [JavaScript End to End Testing Framework - cypress.io](https://www.cypress.io/)
 
+# microfrontend.org
++ [www.microfrontend.org](https://www.microfrontend.org/)
+ 
 ## API foundation
 
 .promagen - web management dla devops
@@ -578,3 +587,6 @@ install promagen
 
 ---
 + [edit](https://github.com/web-stream/www/edit/main/README.md)
+```
+https://github.com/web-stream/www.git
+```    

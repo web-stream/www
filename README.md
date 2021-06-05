@@ -5,13 +5,32 @@ Streaming application/interface directly on frontend, without building backend s
 is part of [wapka ecosystem](https://docs.wapka.pl/) to build Application based on PaaS infrastructure
 
 
-+ jest modularnym standardem ładowania mediów na stronę  www, umożliwiającym implementację streamowania poprzez protokół HTTP
-
+## More
 + [Hosted Projects - OpenJS Foundation](https://openjsf.org/projects/)
 
 + [Wapka, Softreck’s OpenSource Deployment Ecosystem - docs](https://docs.wapka.pl/)
 
 + [JavaScript End to End Testing Framework - cypress.io](https://www.cypress.io/)
+
+## API foundation
+
+.promagen - web management dla devops
+.apicra - skrypty do instalacji env
+.apifunc - funkcje, implementacja apiunit
+.apiunit - metadane potrzebne do stworzenia aplikacji
+.apibuild - budowanie plaikacji, deployment
+
+
+## WebStream, what it is?
+
+
++ jest modularnym standardem ładowania mediów na stronę  www, umożliwiającym implementację streamowania poprzez protokół HTTP
+
+WebStream is a rapid prototyping, playing and learning environment for web development.
+Extends the JavaScripts language with Stream Thinking and libraries for building asyncron, decentralized, modular applications.
+
+Web Stream a continuous improving by a flowing stream; a continuous succession of changes
+
 
 ## Current Technologies at 2021
 
@@ -524,6 +543,38 @@ _(docs).filter(isBlogpost).pipe(output);
 var transformStream = _.pipeline(_.filter(isBlogpost));
 docs.pipe(transformStream).pipe(output);
 ```
+
+
+
+# First Steps with .apicra
+
+## on linux
+
+### install
+    sh .apicra/install
+
+install promagen
+
+    sh .apicra/promagen
+
+### start
+    sh .apicra/start
+
+### open in browser
+    sh .apicra/browser
+
+## on windows
+
+### install
+    .apicra\install.bat
+
+### start
+    .apicra\start.bat
+
+
+### open in browser
+    .apicra\browser.bat
+
 
 ---
 + [edit](https://github.com/web-stream/www/edit/main/README.md)

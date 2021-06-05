@@ -1,7 +1,6 @@
 .idea/
-load_func.php
-def_json.php
-let_json.php
+apicra.php
+#.apibuild
 
 # Logs
 logs

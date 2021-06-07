@@ -22,13 +22,20 @@ is part of [wapka ecosystem](https://docs.wapka.pl/) to build Application based 
 + [www.microfrontend.org](https://www.microfrontend.org/)
  
 ## API foundation
+NO CONTEXT
+NO DEPENDENCY
+ONLY CODE
+NATIVE TECHNOLOGIES AND LANGUAGES
+LEGACY CODE SUPOPRTED
+OS FRIENDLY (LINUX/IOS/WINDOWS)
+LOCAL, DECENTRALIZED, AUTONOMOUS
 
-.promagen - web management dla devops
+
 .apicra - skrypty do instalacji env
 .apifunc - funkcje, implementacja apiunit
 .apiunit - metadane potrzebne do stworzenia aplikacji
 .apibuild - budowanie plaikacji, deployment
-
+.apiterminal - web management dla devops
 
 ## WebStream, what it is?
 

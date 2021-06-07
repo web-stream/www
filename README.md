@@ -437,8 +437,10 @@ routing dla url
 devops part
 + deployment
 + monitoring
+  
 
-
+jRuns is an executor that allows you to execute builds on a remote machine by executing commands over SSH.
+it's usefull to nodejs/deno environment as backend application
 
 
 ## Ekosystem do streamowania

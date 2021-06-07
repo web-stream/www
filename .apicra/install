@@ -1,4 +1,5 @@
 #!/bin/bash
+
 echo "I will prepare linux for updates"
 apt-get autoremove -y
 apt-get update -y

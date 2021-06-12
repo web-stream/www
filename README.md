@@ -624,6 +624,59 @@ install promagen
     .apicra\browser.bat
 
 
+
+## FLOW of creation with webstream 
+focus on small defined problem in some context and make the context smaller by the iteration
+
+**Create just one function**
+
++ Don’t create all in one class.
++ Think about your problem and solve it by many functions, but make it more generic to extend with another functions
+  
+**Deliver in small pieces** 
+
++ Do not bury your work on the long-living branch. 
++ There is a high risk that you will never finish that. 
++ Break it up into smaller pieces and deliver on each piece, one by one.    
+  + extend the functionality by modularisation
+  
+**Take care of the documentation** 
+
++ without documentation, no one will use your code. 
++ Make a README one file documentation
+  
+
+**Create a CI / CD flow** 
+
++ Many tools allow you to configure a free CI process for Open Source projects expressly:
+  + DevOps, Github Actions, Travis, etc.
++ User should started the code-base without failure. 
+  + The repository should be builded and tested.
++ This is crucial for potential contributors.
+ 
+
+**Join the community** 
+
+**communication channel**
+Every popular library has its communication channel, be it Slack, Gitter, Discourse or a mailing list.
+
+Join it, check how people communicate with each other and how they help on issues.
+Verify if this is the place you want to be. 
+
+From such a channel, you can also assess whether the community is alive. 
+If there are active discussions, there is a greater chance that the library is maintained.
+
+
+**Help others**
+
+Open Source, as the name suggests, is about being OPEN.
+
+Even if you do not consider yourself an expert, your advice may be valuable to someone. 
+Don’t be afraid that someone will tell that: you’re wrong. 
+Even if someone criticizes your work, you will at least learn something new. 
+You will confront your thinking.
+
+
 ---
 + [edit](https://github.com/web-stream/www/edit/main/README.md)
 + [web-stream/www: Website about Webstreaming - WebStream.dev](https://github.com/web-stream/www)

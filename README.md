@@ -144,6 +144,34 @@ steps:
 * Testing tools that allow you to write a confident test suite without the complexity of running a whole browser alongside your tests
 
 
+# [API Platform: Getting Started With API Platform: Create Your API and Your Jamstack Site](https://api-platform.com/docs/distribution/)
+
+> -   a [Helm](https://helm.sh/) chart to deploy the API in any [Kubernetes](https://api-platform.com/docs/deployment/kubernetes/) cluster
+> 
+> ## A Bookshop API
+> 
+> To discover how the framework works, we will create an API to manage a bookshop.
+> 
+> To create a fully featured API, an admin interface and a Progressive Web App using Next.js, all you need is to design **the public data model of our API** and handcraft it as _Plain Old PHP Objects_.
+> 
+> API Platform uses these model classes to expose and document a web API having a bunch of built-in features:
+> 
+> -   creating, retrieving, updating and deleting (CRUD) resources
+> -   data validation
+> -   pagination
+> -   filtering
+> -   sorting
+> -   hypermedia/[HATEOAS](https://en.wikipedia.org/wiki/HATEOAS) and content negotiation support ([JSON-LD](https://json-ld.org) and [Hydra](https://www.hydra-cg.com/), [JSON:API](https://jsonapi.org/), [HAL](https://tools.ietf.org/html/draft-kelly-json-hal-08)...)
+> -   [GraphQL support](https://api-platform.com/docs/core/graphql/)
+> -   Nice UI and machine-readable documentations ([Swagger UI/OpenAPI](https://swagger.io), [GraphiQL](https://github.com/graphql/graphiql)...)
+> -   authentication ([Basic HTTP](https://en.wikipedia.org/wiki/Basic_access_authentication), cookies as well as [JWT](https://jwt.io/) and [OAuth](https://oauth.net/) through extensions)
+> -   [CORS headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)
+> -   security checks and headers (tested against [OWASP recommendations](https://www.owasp.org/index.php/REST_Security_Cheat_Sheet))
+> -   [invalidation-based HTTP caching](https://api-platform.com/docs/core/performance/)
+> -   and basically everything needed to build modern APIs.
+> 
+> One more thing, before we start: as the API Platform distribution includes [the Symfony framework](https://symfony.com), it is compatible with most [Symfony bundles](https://flex.symfony.com) (plugins) and benefits from [the numerous extensions points](https://api-platform.com/docs/core/extending/) provided by this rock-solid foundation (events, Dependency Injection Container...). Adding features like custom or service-oriented API endpoints, JWT or OAuth authentication, HTTP caching, mail sending or asynchronous jobs to your APIs is straightforward.
+ 
 ## AaaS - Application as a Stream
 
 AaaS is supported by WebStream.

@@ -11,6 +11,60 @@ Streaming application/interface directly on frontend, without building backend s
 is part of [wapka ecosystem](https://docs.wapka.pl/) to build Application based on PaaS infrastructure
 
 
+Project Status
+
+⚠️ WebStream is still an early beta, missing features and bugs are to be expected! If you can stomach it,
+then WebStream-built sites are production ready and several production websites built with WebStream already exist in the wild. 
+We will update this note once we get closer to a stable, v1.0 release.
+
+
+
+## 🔧 Quick Start
+
+> __Important__: WebStream is built with [ESM modules](https://nodejs.org/api/esm.html) which are not supported in older version of Node.js. The minimum supported version is __14.15.1__.
+
+```bash
+# create your project
+mkdir new-project-directory
+cd new-project-directory
+npm init webstream
+
+# install your dependencies
+npm install
+
+# start the dev server and open your browser
+npm start
+```
+
+### 🚀 Build & Deployment
+
+The default WebStream project has the following `scripts` in the `/package.json` file:
+
+```json
+{
+  "scripts": {
+    "start": "WebStream dev",
+    "build": "WebStream build"
+  }
+}
+```
+
+For local development, run:
+
+```
+npm run start
+```
+
+To build for production, run the following command:
+
+```
+npm run build
+```
+
+To deploy your WebStream site to production, upload the contents of `/dist` to your favorite static site host.
+
+
+
 ## More
 + [Hosted Projects - OpenJS Foundation](https://openjsf.org/projects/)
 

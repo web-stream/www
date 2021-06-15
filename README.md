@@ -14,7 +14,7 @@ is part of [wapka ecosystem](https://docs.wapka.pl/) to build Application based 
 Project Status
 
 ⚠️ WebStream is still an early beta, missing features and bugs are to be expected! If you can stomach it,
-then WebStream-built sites are production ready and several production websites built with WebStream already exist in the wild. 
+then WebStream-built sites are production ready and several production websites built with WebStream already exist in the wild.
 We will update this note once we get closer to a stable, v1.0 release.
 
 
@@ -74,7 +74,7 @@ To deploy your WebStream site to production, upload the contents of `/dist` to y
 
 # microfrontend.org
 + [www.microfrontend.org](https://www.microfrontend.org/)
- 
+
 ## API foundation
 
 ## abstraction and AI
@@ -106,20 +106,20 @@ OS FRIENDLY (LINUX/IOS/WINDOWS)
 LOCAL, DECENTRALIZED, AUTONOMOUS
 
 
-.apicra - bash scripts to prepare environment
-https://www.apicra.com
+[.apicra](https://www.apicra.com) - bash scripts to prepare environment
 
-.apifunc - funkcje, implementacja apiunit
-https://www.apifunc.com
 
-.apiunit - metadane potrzebne do stworzenia aplikacji
-https://www.apiunit.com
+[.apifunc](https://www.apifunc.com) - funkcje, implementacja apiunit
 
-.apibuild - budowanie plaikacji, deployment
-https://www.apibuild.com
 
-.apiterminal - devops terminal by web
-https://www.apiterminal.com
+[.apiunit](https://www.apiunit.com) - metadane potrzebne do stworzenia aplikacji
+
+
+[.apibuild](https://www.apibuild.com) - budowanie plaikacji, deployment
+
+
+[.apiterminal](https://www.apiterminal.com) - devops terminal by web
+
 
 ## WebStream, what it is?
 
@@ -131,54 +131,6 @@ Extends the JavaScripts language with Stream Thinking and libraries for building
 
 Web Stream a continuous improving by a flowing stream; a continuous succession of changes
 
-
-## Current Technologies at 2021
-
-+ Single Page Application (SPA)
-+ Progressive Web App (PWA)
-+ Application as a Stream (AaaS)
-    + javascript    
-    + native
-    + json based communication
-    
-
-## The Stack
-
-How your stack looks will depend on how you want to render your application. Here is a comprehensive discussion about that, but in a nutshell:
-
-    Client-side rendering(CSR); SPA; JSON APIs —
-    This is perhaps the most popular approach. It's great for building interactive web applications. But be aware of its downsides and steps to mitigate them. This is the approach I took, so we will talk about it in a lot of detail.
-
-    Hybrid CSR; Both client-side and server-side rendering(SSR) —
-    With this approach, you still build your SPA. But when a user requests your app, for example, the homepage, you render the homepage's component into its static HTML in your server and serve it to the user. Then at the user's browser, hydration will happen so the whole thing becomes the intended SPA.
-
-The main benefits of this approach are that you get good SEO and users can see your stuff sooner (faster 'First Meaningful Paint').
-
-But there are downsides too. Apart from the extra maintenance costs, we will have to download the same payload twice—First, the HTML, and second, its Javascript counterpart for the 'hydration' which will exert significant work on the browser's main thread. This prolongs the 'First time to interactive', and hence diminishes the benefits gained from a faster 'First meaningful paint'.
-
-The technologies that are adopted for this approach are NextJs, NuxtJs, and GatsbyJs.
-
-
-
-### Turbolinks
-https://github.com/turbolinks/turbolinks
-Turbolinks® makes navigating your web application faster. Get the performance benefits of a single-page application without the added complexity of a client-side JavaScript framework. Use HTML to render your views on the server side and link to pages as usual. When you follow a link, Turbolinks automatically fetches the page, swaps in its <body>, and merges its <head>, all without incurring the cost of a full page load.
-
-
-
-
-### Phoenix LiveView
-
-https://github.com/phoenixframework/phoenix_live_view
-
-Phoenix LiveView enables rich, real-time user experiences with server-rendered HTML.
-
-After you [install Elixir](https://elixir-lang.org/install.html)
-in your machine, you can create your first LiveView app in two
-steps:
-
-    $ mix archive.install hex phx_new
-    $ mix phx.new demo --live
 
 #### Features
 
@@ -218,7 +170,7 @@ API Platform uses these model classes to expose and document a web API having a 
 + and basically everything needed to build modern APIs.
 
 One more thing, before we start: as the API Platform distribution includes [the Symfony framework](https://symfony.com), it is compatible with most [Symfony bundles](https://flex.symfony.com) (plugins) and benefits from [the numerous extensions points](https://api-platform.com/docs/core/extending/) provided by this rock-solid foundation (events, Dependency Injection Container...). Adding features like custom or service-oriented API endpoints, JWT or OAuth authentication, HTTP caching, mail sending or asynchronous jobs to your APIs is straightforward.
- 
+
 ## AaaS - Application as a Stream
 
 AaaS is supported by WebStream.
@@ -235,7 +187,7 @@ Over modularity each website can talk to another without barrier...
 Id elementów DOM muszą być unikatowe dla aplikacji i jej elementów gdy są wyświetlane razem.
 Rozwiązaliśmy ten problem poprzez dodanie nazwy aplikacji przed każdym id np. web-chat-header, web-admin-header, ...
 
-    
+
 ### Supported media
 
 Ładowanie mediów tekstowych, kodu aplikacji, filmów, głosu, itp.
@@ -256,7 +208,7 @@ Because we can improve our stack without clouds
 [more about limitations of CLOUDS](CLOUDS.md)
 
 ## story
-    
+
 Gdy korzystamy z własnej implementacji frontend <-mikroserwisy możemy napotkać niektóre z tych problemów:
 
 + wiele wersji tej samej biblioteki ładujących się z losową kolejnością i nadpisujących się,
@@ -265,48 +217,7 @@ Gdy korzystamy z własnej implementacji frontend <-mikroserwisy możemy napotka�
 + problemy z routingiem,
 + brak lazy loading.
 
-### iframe
-Wykorzystanie iframe, pozwala na łatwe wdrożeni, niestety ostylowanie jest trudne i niewygodne a dostępność dla ludzi korzystających z czytników ekranowych jest jeszcze gorzej. 
 
-Najprostszy sposób, aby zacząć: możemy użyć okna postMessage() do komunikacji między aplikacjami.
-
-   
-###  Single SPA
-
-
-Jest to framework do komponowania ze sobą aplikacji frontendowych. Jeśli chcesz rozpocząć prawdziwy projekt, wybierz ten poniżej:
-
-Mikrofrontend pozwala nam łączyć kilka aplikacji napisanych nawet w różnych frameworkach
-Frameworki są tylko narzędziem, najważniejsza natomiast dla nas jest możliwość podzielenia aplikacji funkcjonalnie i przydzielenia tych części zespołom.
-
-https://single-spa.js.org
-    
-    
-
-### Frint
-
-To kolejny framework do komponowania ze sobą aplikacji frontendowych. Bardziej elastyczny niż Single SPA, ale nowszy i mniej popularny:
-
-https://frint.js.org
-
-    
-    
-### Komponenty webowe
-
-Nie jest to framework, ale funkcja przeglądarki i być może przyszłość Internetu. Oto artykuł na ten temat:
-
-https://www.webcomponents.org/introduction
-    
-    
-
-### Taylor
-
-Framework ten wykorzystuje inne podejście, tworząc stronę routingu na backendzie za pomocą node.js. Jeśli pomysł Ci się podoba, warto zobaczyć:
-
-https://github.com/zalando/tailor
-    
-    
-    
 # Powstanie
 
 pierwsze kroki:
@@ -332,8 +243,12 @@ Po wykonaniu prototypu jLoads udało się określić strukturę biblioteki w kon
 Wydzieliłem nawet biblioteki do ładowania, definicji JSON oraz do Ładowania i routowania mediów
 
 
-# Moduły WebStream
+# Ekosystem do streamowania
 
+Poniższe funkcje pozwalają na implementację tych rozwiazań w kilku językach programowania
+
+
+## Moduły WebStream
 
 + letJson
 + jsondef
@@ -343,35 +258,72 @@ Wydzieliłem nawet biblioteki do ładowania, definicji JSON oraz do Ładowania i
 
 
 
+
+## język programowania:
+
+#### JavaScript
++ domena: js.[funkcja].com
+
+#### PHP
++ domena: php.[funkcja].com
+
+#### Python
++ domena: py.[funkcja].com
+
+
+
+# Modularyzacja
+[Modularyzacja przy wytwarzaniu oprogramowania.](https://www.hipermodularyzacja.pl/)
+
+## Ogólne Dane
+
+### Logo
++ logo.[funkcja].com
+
+### Dokumentacja
++ docs.[funkcja].com
+
+
+## per Moduł
+
+### Pobranie, paczka
++ get.[język].[funkcja].com
+
+### Edycja, repozytorium git
++ git.[język].[funkcja].com
+
+
+
+
 ## [let json](https://www.letjson.com)
 ![let json](https://logo.letjson.com/1/cover.png)
 
 
 
 ### Rozwiązania
-    
+
 pobieranie pliku json z URL możliwość kontroli procesu poprzez funkcję succes w przypadku poprawnego pobrania oraz error, gdy plik nie istnieje, lub nie ma odpowiedniego formatu
 
 #### Osobne callback-i do pozytywnego i negatywnego przypadku
 
-```php 
-letJson( String  url, Function  success, Function  error)     
+```php
+letJson( String  url, Function  success, Function  error)
 ```
 
 #### Metoda try - catch, bez callback, do error
-    
+
 ```php
 try{
-    letJson( String  url, Function  json, Function  item)     
+    letJson( String  url, Function  json, Function  item)
 }catch(){
 
 }
-```   
+```
 
 ### Przykłady użycia
 
 #### 1. użycie z adresem url, callback: success, error
-    
+
 ```js
 letJson(
     "get.domain.com/file.json",
@@ -383,9 +335,9 @@ letJson(
     }
 );
 ```
-    
+
 #### 2. użycie z adresem url, bez callback do error, ale throw exception
-    
+
 ```js
 letJson(
     "get.domain.com/file.json",
@@ -398,16 +350,16 @@ letJson(
 );
 ```
 
-#### 3. użycie z adresem url, oddzielne parametry jako funkcje, 
+#### 3. użycie z adresem url, oddzielne parametry jako funkcje,
 
-+ zwiększa przejrzystosć kodu, 
++ zwiększa przejrzystosć kodu,
 + pozwala na łatwą rozbudowę
 
 ##### asynchronicznie
 
 ```js
 letJson(
-    "get.domain.com/file.json"       
+    "get.domain.com/file.json"
 ).
 json(
     function(json) {
@@ -420,11 +372,11 @@ item(
     }
 );
 ```
-    
+
 ##### synchronicznie
 
         var json = letJson("get.domain.com/file.json");
-        
+
 
 
 ## [json def](https://www.jsondef.com)
@@ -435,7 +387,7 @@ okreslanie oczekiwanej struktury oraz podłączenie każdego elementu JSON pod k
 
 ### def.json
 
-```json    
+```json
 {
     "xpath/name":"function1",
     "xpath/name":"function1"
@@ -443,7 +395,7 @@ okreslanie oczekiwanej struktury oraz podłączenie każdego elementu JSON pod k
 }
 ```
 
-### jsonDef(json, success, error)    
+### jsonDef(json, success, error)
 
 ```js
     jsonDef(
@@ -452,7 +404,7 @@ okreslanie oczekiwanej struktury oraz podłączenie każdego elementu JSON pod k
 
         }
     );
-```    
+```
 
 ### Pobranie definicji dla pliku JSON
 
@@ -470,7 +422,7 @@ letJson(
         )
    }
 );
-```    
+```
 
 
 
@@ -482,7 +434,7 @@ letJson(
 
 + jBodys()
 
-Definicja moułu, poprzez określenie zalezności ładowania 
+Definicja moułu, poprzez określenie zalezności ładowania
 W anstaepnej wersji również określanie wersji
 
 ```json
@@ -505,7 +457,7 @@ Budowanie struktury pliku JSON z wielu plików
       "newsletter.json": [
           "submit.json",
           "/form/field/text.json",
-          "/form/field/email.json",        
+          "/form/field/email.json",
       ]
   }
 }
@@ -549,58 +501,10 @@ routing dla url
 devops part
 + deployment
 + monitoring
-  
+
 
 jRuns is an executor that allows you to execute builds on a remote machine by executing commands over SSH.
 it's usefull to nodejs/deno environment as backend application
-
-
-## Ekosystem do streamowania
-
-Poniższe funkcje pozwalają na implementację tych rozwiazań w kilku językach programowania
-
-## Funkcja
-
-+ letJson
-+ jsondef
-+ jBodys
-+ jLoads
-+ jRoutes
-
-## język programowania:
-
-#### JavaScript
-+ domena: js.[funkcja].com
-
-#### PHP
-+ domena: php.[funkcja].com
-
-#### Python
-+ domena: py.[funkcja].com
-
-
-
-# Modularyzacja
-[Modularyzacja przy wytwarzaniu oprogramowania.](https://www.hipermodularyzacja.pl/)
-
-## Ogólne Dane
-
-### Logo
-+ logo.[funkcja].com
-
-### Dokumentacja
-+ docs.[funkcja].com
-
-
-## per Moduł
-
-### Pobranie, paczka
-+ get.[język].[funkcja].com
-
-### Edycja, repozytorium git
-+ git.[język].[funkcja].com
-
-
 
 # Examples
 
@@ -650,7 +554,7 @@ var foo = _($.getJSON('/api/foo'));
 
 Piping in data from Node Streams
 
-```js    
+```js
 function isBlogPost(doc) {
     return doc.type === 'blogpost';
 }
@@ -700,45 +604,45 @@ install promagen
 
 
 
-## FLOW of creation with webstream 
+## FLOW of creation with webstream
 focus on small defined problem in some context and make the context smaller by the iteration
 
 **Create just one function**
 
 + Don’t create all in one class.
 + Think about your problem and solve it by many functions, but make it more generic to extend with another functions
-  
-**Deliver in small pieces*+ 
 
-+ Do not bury your work on the long-living branch. 
-+ There is a high risk that you will never finish that. 
-+ Break it up into smaller pieces and deliver on each piece, one by one.    
+**Deliver in small pieces*+
+
++ Do not bury your work on the long-living branch.
++ There is a high risk that you will never finish that.
++ Break it up into smaller pieces and deliver on each piece, one by one.
   + extend the functionality by modularisation
-  
-**Take care of the documentation*+ 
 
-+ without documentation, no one will use your code. 
+**Take care of the documentation*+
+
++ without documentation, no one will use your code.
 + Make a README one file documentation
-  
 
-**Create a CI / CD flow*+ 
+
+**Create a CI / CD flow*+
 
 + Many tools allow you to configure a free CI process for Open Source projects expressly:
   + DevOps, Github Actions, Travis, etc.
-+ User should started the code-base without failure. 
++ User should started the code-base without failure.
   + The repository should be builded and tested.
 + This is crucial for potential contributors.
- 
 
-**Join the community*+ 
+
+**Join the community*+
 
 **communication channel**
 Every popular library has its communication channel, be it Slack, Gitter, Discourse or a mailing list.
 
 Join it, check how people communicate with each other and how they help on issues.
-Verify if this is the place you want to be. 
+Verify if this is the place you want to be.
 
-From such a channel, you can also assess whether the community is alive. 
+From such a channel, you can also assess whether the community is alive.
 If there are active discussions, there is a greater chance that the library is maintained.
 
 
@@ -746,9 +650,9 @@ If there are active discussions, there is a greater chance that the library is m
 
 Open Source, as the name suggests, is about being OPEN.
 
-Even if you do not consider yourself an expert, your advice may be valuable to someone. 
-Don’t be afraid that someone will tell that: you’re wrong. 
-Even if someone criticizes your work, you will at least learn something new. 
+Even if you do not consider yourself an expert, your advice may be valuable to someone.
+Don’t be afraid that someone will tell that: you’re wrong.
+Even if someone criticizes your work, you will at least learn something new.
 You will confront your thinking.
 
 
@@ -757,4 +661,4 @@ You will confront your thinking.
 + [web-stream/www: Website about Webstreaming - WebStream.dev](https://github.com/web-stream/www)
 ```
 https://github.com/web-stream/www.git
-```   
+```

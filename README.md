@@ -21,7 +21,7 @@ We will update this note once we get closer to a stable, v1.0 release.
 
 ## 🔧 Quick Start
 
-> __Important__: WebStream is built with [ESM modules](https://nodejs.org/api/esm.html) which are not supported in older version of Node.js. The minimum supported version is __14.15.1__.
+__Important__: WebStream is built with [ESM modules](https://nodejs.org/api/esm.html) which are not supported in older version of Node.js. The minimum supported version is __14.15.1__.
 
 ```bash
 # create your project
@@ -168,6 +168,7 @@ Turbolinks® makes navigating your web application faster. Get the performance b
 
 
 ### Phoenix LiveView
+
 https://github.com/phoenixframework/phoenix_live_view
 
 Phoenix LiveView enables rich, real-time user experiences with server-rendered HTML.
@@ -181,50 +182,42 @@ steps:
 
 #### Features
 
-* Use a declarative model to render HTML on the server over WebSockets with optional LongPolling fallback
-
-* Smart templating and change tracking - after connected, LiveView sends only what changed to the client, skipping the template markup and reducing the payload
-
-* Live form validation with file upload support
-
-* A rich integration API with the client with `phx-click`, `phx-focus`, `phx-blur`, `phx-submit`, etc. `phx-hook` is included for the cases where you have to write JavaScript
-
-* Code reuse via components, which break templates, state, and event handling into reusable bits, which is essential in large applications
-
-* Live navigation to enrich links and redirects to only load the minimum amount of content as users navigate between pages
-
-* A latency simulator so you can emulate how slow clients will interact with your application
-
-* Testing tools that allow you to write a confident test suite without the complexity of running a whole browser alongside your tests
++ Use a declarative model to render HTML on the server over WebSockets with optional LongPolling fallback
++ Smart templating and change tracking - after connected, LiveView sends only what changed to the client, skipping the template markup and reducing the payload
++ Live form validation with file upload support
++ A rich integration API with the client with `phx-click`, `phx-focus`, `phx-blur`, `phx-submit`, etc. `phx-hook` is included for the cases where you have to write JavaScript
++ Code reuse via components, which break templates, state, and event handling into reusable bits, which is essential in large applications
++ Live navigation to enrich links and redirects to only load the minimum amount of content as users navigate between pages
++ A latency simulator so you can emulate how slow clients will interact with your application
++ Testing tools that allow you to write a confident test suite without the complexity of running a whole browser alongside your tests
 
 
-# [API Platform: Getting Started With API Platform: Create Your API and Your Jamstack Site](https://api-platform.com/docs/distribution/)
+## A WebStream API
 
-> -   a [Helm](https://helm.sh/) chart to deploy the API in any [Kubernetes](https://api-platform.com/docs/deployment/kubernetes/) cluster
-> 
-> ## A Bookshop API
-> 
-> To discover how the framework works, we will create an API to manage a bookshop.
-> 
-> To create a fully featured API, an admin interface and a Progressive Web App using Next.js, all you need is to design **the public data model of our API** and handcraft it as _Plain Old PHP Objects_.
-> 
-> API Platform uses these model classes to expose and document a web API having a bunch of built-in features:
-> 
-> -   creating, retrieving, updating and deleting (CRUD) resources
-> -   data validation
-> -   pagination
-> -   filtering
-> -   sorting
-> -   hypermedia/[HATEOAS](https://en.wikipedia.org/wiki/HATEOAS) and content negotiation support ([JSON-LD](https://json-ld.org) and [Hydra](https://www.hydra-cg.com/), [JSON:API](https://jsonapi.org/), [HAL](https://tools.ietf.org/html/draft-kelly-json-hal-08)...)
-> -   [GraphQL support](https://api-platform.com/docs/core/graphql/)
-> -   Nice UI and machine-readable documentations ([Swagger UI/OpenAPI](https://swagger.io), [GraphiQL](https://github.com/graphql/graphiql)...)
-> -   authentication ([Basic HTTP](https://en.wikipedia.org/wiki/Basic_access_authentication), cookies as well as [JWT](https://jwt.io/) and [OAuth](https://oauth.net/) through extensions)
-> -   [CORS headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)
-> -   security checks and headers (tested against [OWASP recommendations](https://www.owasp.org/index.php/REST_Security_Cheat_Sheet))
-> -   [invalidation-based HTTP caching](https://api-platform.com/docs/core/performance/)
-> -   and basically everything needed to build modern APIs.
-> 
-> One more thing, before we start: as the API Platform distribution includes [the Symfony framework](https://symfony.com), it is compatible with most [Symfony bundles](https://flex.symfony.com) (plugins) and benefits from [the numerous extensions points](https://api-platform.com/docs/core/extending/) provided by this rock-solid foundation (events, Dependency Injection Container...). Adding features like custom or service-oriented API endpoints, JWT or OAuth authentication, HTTP caching, mail sending or asynchronous jobs to your APIs is straightforward.
++ [API Platform: Getting Started With API Platform: Create Your API and Your Jamstack Site](https://api-platform.com/docs/distribution/)
+
++ a [Helm](https://helm.sh/) chart to deploy the API in any [Kubernetes](https://api-platform.com/docs/deployment/kubernetes/) cluster
+
+
+To create a fully featured API, an admin interface and a Progressive Web App using WebStream all you need is to design **the stream data model of our application**
+
+API Platform uses these model classes to expose and document a web API having a bunch of built-in features:
+
++ creating, retrieving, updating and deleting (CRUD) resources
++ data validation
++ pagination
++ filtering
++ sorting
++ hypermedia/[HATEOAS](https://en.wikipedia.org/wiki/HATEOAS) and content negotiation support ([JSON-LD](https://json-ld.org) and [Hydra](https://www.hydra-cg.com/), [JSON:API](https://jsonapi.org/), [HAL](https://tools.ietf.org/html/draft-kelly-json-hal-08)
++ [GraphQL support](https://api-platform.com/docs/core/graphql/)
++ Nice UI and machine-readable documentations ([Swagger UI/OpenAPI](https://swagger.io), [GraphiQL](https://github.com/graphql/graphiql)...)
++ authentication ([Basic HTTP](https://en.wikipedia.org/wiki/Basic_access_authentication), cookies as well as [JWT](https://jwt.io/) and [OAuth](https://oauth.net/) through extensions)
++ [CORS headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)
++ security checks and headers (tested against [OWASP recommendations](https://www.owasp.org/index.php/REST_Security_Cheat_Sheet))
++ [invalidation-based HTTP caching](https://api-platform.com/docs/core/performance/)
++ and basically everything needed to build modern APIs.
+
+One more thing, before we start: as the API Platform distribution includes [the Symfony framework](https://symfony.com), it is compatible with most [Symfony bundles](https://flex.symfony.com) (plugins) and benefits from [the numerous extensions points](https://api-platform.com/docs/core/extending/) provided by this rock-solid foundation (events, Dependency Injection Container...). Adding features like custom or service-oriented API endpoints, JWT or OAuth authentication, HTTP caching, mail sending or asynchronous jobs to your APIs is straightforward.
  
 ## AaaS - Application as a Stream
 
@@ -264,7 +257,7 @@ Because we can improve our stack without clouds
 
 ## story
     
-Gdy korzystamy z własnej implementacji frontend <-> mikroserwisy możemy napotkać niektóre z tych problemów:
+Gdy korzystamy z własnej implementacji frontend <-mikroserwisy możemy napotkać niektóre z tych problemów:
 
 + wiele wersji tej samej biblioteki ładujących się z losową kolejnością i nadpisujących się,
 + style z jednej aplikacji nadpisywały drugą,
@@ -715,20 +708,20 @@ focus on small defined problem in some context and make the context smaller by t
 + Don’t create all in one class.
 + Think about your problem and solve it by many functions, but make it more generic to extend with another functions
   
-**Deliver in small pieces** 
+**Deliver in small pieces*+ 
 
 + Do not bury your work on the long-living branch. 
 + There is a high risk that you will never finish that. 
 + Break it up into smaller pieces and deliver on each piece, one by one.    
   + extend the functionality by modularisation
   
-**Take care of the documentation** 
+**Take care of the documentation*+ 
 
 + without documentation, no one will use your code. 
 + Make a README one file documentation
   
 
-**Create a CI / CD flow** 
+**Create a CI / CD flow*+ 
 
 + Many tools allow you to configure a free CI process for Open Source projects expressly:
   + DevOps, Github Actions, Travis, etc.
@@ -737,7 +730,7 @@ focus on small defined problem in some context and make the context smaller by t
 + This is crucial for potential contributors.
  
 
-**Join the community** 
+**Join the community*+ 
 
 **communication channel**
 Every popular library has its communication channel, be it Slack, Gitter, Discourse or a mailing list.

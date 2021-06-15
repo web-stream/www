@@ -1,0 +1,14 @@
+[
+  {
+    "ip": "217.160.222.222",
+    "host": "letjson.com",
+    "login": "letjson",
+    "password": "test"
+  },
+  {
+    "ip": "217.160.222.111",
+    "host": "letjson111.com",
+    "login": "letjson111",
+    "password": "test111"
+  }  
+]

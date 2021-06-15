@@ -1,0 +1,19 @@
+{
+    "name": "webstream",
+    "title": "webstream",
+    "description": "webstream() function & webstream class are downloading data or files by http request",
+    "version": "{{VER}}",
+    "keywords": [
+        "webstream", "stream", "get", "request", "http"
+    ],
+    "author": {
+        "name": "Tom Sapletta",
+        "email": "info@softreck.dev",
+        "url": "http://softreck.dev"
+    },
+    "homepage": "https://www.webstream.com/",
+    "bugs": "https://github.com/web-stream/www/issues",
+    "demo": "http://demo.webstream.com/",
+    "docs": "http://docs.webstream.com/",
+    "download": "https://github.com/web-stream/www/releases",
+}

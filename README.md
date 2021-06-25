@@ -10,6 +10,8 @@
 Streaming application/interface directly on frontend, without building backend side
 is part of [wapka ecosystem](https://docs.wapka.pl/) to build Application based on PaaS infrastructure
 
+## Why?
+In Softreck we introduced interface/application streams (also known as app streams) to provide several applications with different versions that you might want to run in user space. This greatly simplified the layout of the content available in WebStream and offered the flexibility to adopt polyglot persistence and choose whichever database best suits your needs. 
 
 
 ## Streaming server rendering and Progressive Rehydration
